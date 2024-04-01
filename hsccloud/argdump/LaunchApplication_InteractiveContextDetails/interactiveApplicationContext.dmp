@@ -1,0 +1,60 @@
+{
+  "AppId": "63205d95406dca4be174805m",
+  "CorrelationId": "9f94efaf-433a-478e-93e5-4e798f899977",
+  "AppBrowsingContext": {
+    "Level": 2,
+    "PatientDicomId": null,
+    "StudyInstanceUid": null,
+    "SeriesInsstanceUid": null,
+    "InsstanceUid": null
+  }
+}
+
+{
+  "AppId": "63205d95406dca4be174895m",
+  "CorrelationId": "65a569f1-3053-4017-8ee0-46bc2a8d0e66",
+  "AppBrowsingContext": {
+    "Level": 2,
+    "PatientDicomId": null,
+    "StudyInstanceUid": null,
+    "SeriesInsstanceUid": null,
+    "InsstanceUid": null
+  }
+}
+
+{
+  "AppId": "63205d95406dca4be174895m",
+  "CorrelationId": "12d539c7-fb0c-4627-9e23-1dd2bf8bf359",
+  "AppBrowsingContext": {
+    "Level": 2,
+    "PatientDicomId": null,
+    "StudyInstanceUid": null,
+    "SeriesInsstanceUid": null,
+    "InsstanceUid": null
+  }
+}
+
+{
+  "AppId": "63205d95406dca4be174895m",
+  "CorrelationId": "12d539c7-fb0c-4627-9e23-1dd2bf8bf359",
+  "AppBrowsingContext": {
+    "Level": 2,
+    "PatientDicomId": null,
+    "StudyInstanceUid": null,
+    "SeriesInsstanceUid": null,
+    "InsstanceUid": null
+  }
+}
+
+{
+  "AppId": "63205d95406dca4be174895m",
+  "CorrelationId": "c0eec84d-ce7f-4a02-8fe6-73c53777657f",
+  "AppBrowsingContext": {
+    "Level": 2,
+    "PatientDicomId": null,
+    "StudyInstanceUid": null,
+    "SeriesInsstanceUid": null,
+    "InsstanceUid": null
+  }
+}
+

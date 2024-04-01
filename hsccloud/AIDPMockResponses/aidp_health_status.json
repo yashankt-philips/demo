@@ -1,0 +1,4 @@
+﻿{
+   "isReady": true,
+   "statusMessage": "RabbitMQ is Healthy. MongoDB is Healthy." 
+}

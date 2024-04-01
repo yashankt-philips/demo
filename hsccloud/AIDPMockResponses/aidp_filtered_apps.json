@@ -1,0 +1,668 @@
+[
+  {
+    "id": "63205d95406dca4be174895m",
+    "spec_version": "1.1.0",
+    "commercial": {
+      "name": "Shukun Lung mock",
+      "description": "Best app in the world",
+      "uri": "https://marketplace.philips.com/applications/super-ai-application",
+      "logo_uri": "https://marketplace.philips.com/applications/super-ai-application/logo/ai-app-1.0.0.png",
+      "marketplace_id": "6059b03294b4000d9f6a35e3",
+      "vendor_id": "ai-inc-dev",
+      "license": {
+        "pattern": "string",
+        "time_interval": "string",
+        "usage_interval": "string"
+      },
+      "private_key": "-----BEGIN PRIVATE KEY-----MIIJRAIBADANBgkqhkiG9w0BAQEFAASCCS4wggkq ... hMnpHOOGnVBZdVNxlZ9utshYrhRTfEnn-----END PRIVATE KEY-----"
+    },
+    "legal": {
+      "vendor_name": "Shukun Inc.",
+      "name": "Shukun Lung mock",
+      "version": "1.2.0",
+      "udi": "(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234",
+      "serial": "1234567891011121400",
+      "certs": [
+        "cert1",
+        "cert2"
+      ],
+      "regions": [
+        "DE",
+        "AT",
+        "CH"
+      ],
+      "intended_use": "Application is a computer-aided detection (CAD) system intended to identify and mark regions of interest (ROIs). The Application modules of the system operates across all nodule types, including solid, sub-solid and ground glass ranging from 5mm and 30mm in size. The use of the Application leads to a reduction in oversight errors.",
+      "tos_uri": "https://app.ai-inc.com/super-ai-application/tos",
+      "policy_uri": "https://app.ai-inc.com/super-ai-application/policy",
+      "ifu_uri": "https://app.ai-inc.com/super-ai-application/ifu",
+      "dicom_device_uid": "1.2.826.0.1.3680043.10.575.1.111"
+    },
+    "semantic": {
+      "labels": [
+        "classifier",
+        "image",
+        "dicom"
+      ],
+      "data_sources": [
+        {
+          "name": "DICOM_WADO",
+          "type": "dicomweb",
+          "version": "R4",
+          "metadata_only": false,
+          "scope": [
+            "patient/series.read",
+            "patient/study.query"
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "identify_mark_roi",
+          "filters": [
+            {
+              "name": "dicom-bodypart-knee",
+              "criteria": [
+                {
+                  "data_source": "DICOM_WADO",
+                  "key": "00180015",
+                  "text": "eq \"(\"72696002\", \"SCT\", \"KNEE\")\""
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "report",
+              "description": "DICOM SR containing the measurements",
+              "type": "application/dicom.sr",
+              "format": "dcm",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    "technical": {
+      "min_resources": {
+        "cpu": 2,
+        "memory": 1024,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 1024
+      },
+      "max_resources": {
+        "cpu": 4,
+        "memory": 4096,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 8192
+      },
+      "timeout": 300,
+      "pre_started": false,
+      "launch_url": "/invocations",
+      "launch_port": 8000,
+      "env": {
+        "containeR_TYPE": "SERVICE",
+        "SELECTED_FUNCTION": "PRODUCTION",
+        "ACCESS_TOKEN": "PHILIPS_ACCESS_TOKEN",
+        "SECURITY_TOKEN": "PHILIPS_ID_TOKEN",
+        "CORRELATION_ID": "PHILIPS_CORRELATION_ID"
+      },
+      "build": "1.0.0-beta",
+      "docker_image_name": "philips/super-ai-app",
+      "docker_image_tag": "1.0.1"
+    },
+    "extension": {
+      "hostType": "Inference",
+      "adapter": {
+        "required": true,
+        "adapterType": "DicomAdapter",
+        "adapterBaseAddress": "http://shukun-adapter:8002/",
+        "appInvokeEndpoint": "used by Adapter",
+        "appExecutionStatusEndpoint": "used by Adapter",
+        "appHelthCheckEndpoint": "used by Adapter"
+      },
+      "isInteractiveApp": true,
+      "interactiveSettings": {
+        "interactiveUrlPattern": "#host/some/url/#PatientId/#StudyId",
+        "ssoProvider": null
+      },
+      "isDeleted": false,
+      "createTime": "2022-09-16T08:36:35.447Z",
+      "modalityType": "CT"
+    }
+  },
+  {
+    "id": "mock_CCTA_headless_m",
+    "spec_version": "1.1.0",
+    "commercial": {
+      "name": "CCTA headless mock",
+      "description": "Best app in the world",
+      "uri": "https://marketplace.philips.com/applications/super-ai-application",
+      "logo_uri": "https://marketplace.philips.com/applications/super-ai-application/logo/ai-app-1.0.0.png",
+      "marketplace_id": "6059b03294b4000d9f6a35e3",
+      "vendor_id": "ai-inc-dev",
+      "license": {
+        "pattern": "string",
+        "time_interval": "string",
+        "usage_interval": "string"
+      },
+      "private_key": "-----BEGIN PRIVATE KEY-----MIIJRAIBADANBgkqhkiG9w0BAQEFAASCCS4wggkq ... hMnpHOOGnVBZdVNxlZ9utshYrhRTfEnn-----END PRIVATE KEY-----"
+    },
+    "legal": {
+      "vendor_name": "Shukun Inc.",
+      "name": "CCTA headless mock",
+      "version": "1.2.0",
+      "udi": "(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234",
+      "serial": "1234567891011121400",
+      "certs": [
+        "cert1",
+        "cert2"
+      ],
+      "regions": [
+        "DE",
+        "AT",
+        "CH"
+      ],
+      "intended_use": "Application is a computer-aided detection (CAD) system intended to identify and mark regions of interest (ROIs). The Application modules of the system operates across all nodule types, including solid, sub-solid and ground glass ranging from 5mm and 30mm in size. The use of the Application leads to a reduction in oversight errors.",
+      "tos_uri": "https://app.ai-inc.com/super-ai-application/tos",
+      "policy_uri": "https://app.ai-inc.com/super-ai-application/policy",
+      "ifu_uri": "https://app.ai-inc.com/super-ai-application/ifu",
+      "dicom_device_uid": "1.2.826.0.1.3680043.10.575.1.111"
+    },
+    "semantic": {
+      "labels": [
+        "classifier",
+        "image",
+        "dicom"
+      ],
+      "data_sources": [
+        {
+          "name": "DICOM_WADO",
+          "type": "dicomweb",
+          "version": "R4",
+          "metadata_only": false,
+          "scope": [
+            "patient/series.read",
+            "patient/study.query"
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "identify_mark_roi",
+          "filters": [
+            {
+              "name": "dicom-bodypart-shin",
+              "criteria": [
+                {
+                  "data_source": "DICOM_WADO",
+                  "key": "00080005",
+                  "text": "eq \"ISO_IR 100\""
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "report",
+              "description": "DICOM SR containing the measurements",
+              "type": "application/dicom.sr",
+              "format": "dcm",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    "technical": {
+      "min_resources": {
+        "cpu": 2,
+        "memory": 1024,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 1024
+      },
+      "max_resources": {
+        "cpu": 4,
+        "memory": 4096,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 8192
+      },
+      "timeout": 300,
+      "pre_started": false,
+      "launch_url": "/invocations",
+      "launch_port": 8000,
+      "env": {
+        "containeR_TYPE": "SERVICE",
+        "SELECTED_FUNCTION": "PRODUCTION",
+        "ACCESS_TOKEN": "PHILIPS_ACCESS_TOKEN",
+        "SECURITY_TOKEN": "PHILIPS_ID_TOKEN",
+        "CORRELATION_ID": "PHILIPS_CORRELATION_ID"
+      },
+      "build": "1.0.0-beta",
+      "docker_image_name": "philips/super-ai-app",
+      "docker_image_tag": "1.0.1"
+    },
+    "extension": {
+      "hostType": "Legacy",
+      "adapter": {
+        "required": false,
+        "adapterType": "DicomAdapter",
+        "adapterBaseAddress": "http://shukun-adapter:8002/",
+        "appInvokeEndpoint": "used by Adapter",
+        "appExecutionStatusEndpoint": "used by Adapter",
+        "appHelthCheckEndpoint": "used by Adapter"
+      },
+      "isInteractiveApp": false,
+      "interactiveSettings": {
+        "interactiveUrlPattern": "#host/some/url/#PatientId/#StudyId",
+        "ssoProvider": null
+      },
+      "isDeleted": false,
+      "createTime": "2022-09-16T08:36:35.447Z",
+      "modalityType": "CT"
+    }
+  },
+  {
+    "id": "aidp-test-008m",
+    "spec_version": "2.5.0",
+    "commercial": {
+      "name": "qatest002 mock",
+      "description": "qatest002 Best app in the world",
+      "uri": "https://marketplace.philips.com/applications/super-ai-application",
+      "logo_uri": "https://marketplace.philips.com/applications/super-ai-application/logo/ai-app-1.0.0.png",
+      "marketplace_id": "6059b03294b4000d9f6a35e3",
+      "vendor_id": "qatest002",
+      "license": {
+        "pattern": "string",
+        "time_interval": "string",
+        "usage_interval": "string"
+      },
+      "private_key": "-----BEGIN PRIVATE KEY-----MIIJRAIBADANBgkqhkiG9w0BAQEFAASCCS4wggkq ... hMnpHOOGnVBZdVNxlZ9utshYrhRTfEnn-----END PRIVATE KEY-----"
+    },
+    "legal": {
+      "vendor_name": "qatest002 AI Inc.",
+      "name": "qatest002 Super AI Application mock",
+      "version": "1.5.0",
+      "udi": "(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234",
+      "serial": "1234567891011121400",
+      "certs": [
+        "cert1",
+        "cert2"
+      ],
+      "regions": [
+        "DE",
+        "AT",
+        "CH"
+      ],
+      "intended_use": "Application is a computer-aided detection (CAD) system intended to identify and mark regions of interest (ROIs). The Application modules of the system operates across all nodule types, including solid, sub-solid and ground glass ranging from 5mm and 30mm in size. The use of the Application leads to a reduction in oversight errors.",
+      "tos_uri": "https://app.ai-inc.com/super-ai-application/tos",
+      "policy_uri": "https://app.ai-inc.com/super-ai-application/policy",
+      "ifu_uri": "https://app.ai-inc.com/super-ai-application/ifu",
+      "dicom_device_uid": "1.2.826.0.1.3680043.10.575.1.111"
+    },
+    "semantic": {
+      "labels": [
+        "classifier",
+        "image",
+        "dicom"
+      ],
+      "data_sources": [
+        {
+          "name": "DICOM_WADO",
+          "type": "dicomweb",
+          "version": "R4",
+          "metadata_only": false,
+          "scope": [
+            "patient/series.read",
+            "patient/study.query"
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "identify_mark_roi",
+          "filters": [
+            {
+              "name": "dicom-bodypart-knee",
+              "criteria": [
+                {
+                  "data_source": "DICOM_WADO",
+                  "key": "00081032.00080100",
+                  "text": "eq \"CTABDOM\""
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "report",
+              "description": "DICOM SR containing the measurements",
+              "type": "application/dicom.sr",
+              "format": "dcm",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    "technical": {
+      "min_resources": {
+        "cpu": 2,
+        "memory": 1024,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 1024
+      },
+      "max_resources": {
+        "cpu": 4,
+        "memory": 4096,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 8192
+      },
+      "timeout": 300,
+      "pre_started": false,
+      "launch_url": "/invocations",
+      "launch_port": 8080,
+      "env": {
+        "containeR_TYPE": "SERVICE",
+        "SELECTED_FUNCTION": "PRODUCTION",
+        "ACCESS_TOKEN": "PHILIPS_ACCESS_TOKEN",
+        "SECURITY_TOKEN": "PHILIPS_ID_TOKEN",
+        "CORRELATION_ID": "PHILIPS_CORRELATION_ID"
+      },
+      "build": "1.0.0-beta",
+      "docker_image_name": "philips/super-ai-app",
+      "docker_image_tag": "1.0.1"
+    },
+    "extension": {
+      "hostType": "Unmanaged",
+      "adapter": {
+        "required": true,
+        "adapterType": "DicomAdapter",
+        "adapterBaseAddress": "http://aidp-simulatedai:8080",
+        "appInvokeEndpoint": "/AIDPcallsAIApp/invocations",
+        "appExecutionStatusEndpoint": "/status",
+        "appHelthCheckEndpoint": "/AIDPcallsAIApp/ping"
+      },
+      "isInteractiveApp": true,
+      "isHeadlessFlowSupported": false,
+      "interactiveSettings": {
+        "interactiveUrlPattern": "#host/some/url/#PatientId/#StudyId",
+        "ssoProvider": "StandardOidcProvider"
+      },
+      "isDeleted": false,
+      "createTime": "2022-10-21T05:40:51.589Z",
+      "modalityType": "CT"
+    }
+  },
+  {
+    "id": "Mock_app_1",
+    "spec_version": "1.0.0",
+    "commercial": {
+      "name": "Shukun LungDoc mock",
+      "description": "Shukun Lung AI application",
+      "uri": "",
+      "logo_uri": "",
+      "marketplace_id": "",
+      "vendor_id": "shukun",
+      "license": {
+        "pattern": "string",
+        "time_interval": "string",
+        "usage_interval": "string"
+      },
+      "private_key": ""
+    },
+    "legal": {
+      "vendor_name": "Mock_app_1 Inc.",
+      "name": "Mock_app_1",
+      "version": "1.1.0",
+      "udi": "",
+      "serial": "",
+      "certs": [
+        "cert1",
+        "cert2"
+      ],
+      "regions": [
+        "CN"
+      ],
+      "intended_use": "Application is a computer-aided detection (CAD) system from Shukun. TBD",
+      "tos_uri": "",
+      "policy_uri": "",
+      "ifu_uri": "",
+      "dicom_device_uid": "1.2.826.0.1.3680043.10.575.1.111"
+    },
+    "semantic": {
+      "labels": [
+        "classifier",
+        "image",
+        "dicom"
+      ],
+      "data_sources": [
+        {
+          "name": "DICOM_WADO",
+          "type": "dicomweb",
+          "version": "R4",
+          "metadata_only": false,
+          "scope": [
+            "patient/series.read",
+            "patient/study.query"
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "identify_mark_roi",
+          "filters": [
+            {
+              "name": "dicom-bodypart-chest",
+              "criteria": [
+                {
+                  "data_source": "DICOM_WADO",
+                  "key": "00080008",
+                  "text": "eq [\"ORIGINAL\",\"PRIMARY\",\"AXIAL\",\"HELIX\"]"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "report",
+              "description": "DICOM SR containing the measurements",
+              "type": "application/dicom.sr",
+              "format": "dcm",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    "technical": {
+      "min_resources": {
+        "cpu": 2,
+        "memory": 1024,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 1024
+      },
+      "max_resources": {
+        "cpu": 4,
+        "memory": 4096,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 8192
+      },
+      "timeout": 300,
+      "pre_started": false,
+      "launch_url": "/invocations",
+      "launch_port": 8080,
+      "env": {
+        "containeR_TYPE": "SERVICE",
+        "SELECTED_FUNCTION": "PRODUCTION",
+        "ACCESS_TOKEN": "PHILIPS_ACCESS_TOKEN",
+        "SECURITY_TOKEN": "PHILIPS_ID_TOKEN",
+        "CORRELATION_ID": "PHILIPS_CORRELATION_ID"
+      },
+      "build": "1.0.0-beta",
+      "docker_image_name": "philips/super-ai-app",
+      "docker_image_tag": "1.0.1"
+    },
+    "extension": {
+      "hostType": "Unmanaged",
+      "adapter": {
+        "required": true,
+        "adapterType": "ShukunAdapter",
+        "adapterBaseAddress": "http://aidp-simulatedai:8080",
+        "appInvokeEndpoint": "/AIDPcallsAIApp/invocations",
+        "appExecutionStatusEndpoint": "/status",
+        "appHelthCheckEndpoint": "/AIDPcallsAIApp/ping"
+      },
+      "isInteractiveApp": true,
+      "isHeadlessFlowSupported": false,
+      "interactiveSettings": {
+        "interactiveUrlPattern": "#host/thoracic/case?caseId=T20220915140717H0233a77c",
+        "ssoProvider": ""
+      },
+      "isDeleted": false,
+      "createTime": "2022-09-26T02:00:22.932Z",
+      "modalityType": "CT"
+    }
+  },
+  {
+    "id": "633483806122ef8de3b4180m",
+    "spec_version": "1.1.0",
+    "commercial": {
+      "name": "Mock_app_3",
+      "description": "Best app in the world",
+      "uri": "https://marketplace.philips.com/applications/super-ai-application",
+      "logo_uri": "https://marketplace.philips.com/applications/super-ai-application/logo/ai-app-1.0.0.png",
+      "marketplace_id": "6059b03294b4000d9f6a35e3",
+      "vendor_id": "ai-inc-dev",
+      "license": {
+        "pattern": "string",
+        "time_interval": "string",
+        "usage_interval": "string"
+      },
+      "private_key": "-----BEGIN PRIVATE KEY-----MIIJRAIBADANBgkqhkiG9w0BAQEFAASCCS4wggkq ... hMnpHOOGnVBZdVNxlZ9utshYrhRTfEnn-----END PRIVATE KEY-----"
+    },
+    "legal": {
+      "vendor_name": "Mock_app_3 Inc.",
+      "name": "Mock_app_3",
+      "version": "1.2.0",
+      "udi": "(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234",
+      "serial": "1234567891011121400",
+      "certs": [
+        "cert1",
+        "cert2"
+      ],
+      "regions": [
+        "DE",
+        "AT",
+        "CH"
+      ],
+      "intended_use": "Application is a computer-aided detection (CAD) system intended to identify and mark regions of interest (ROIs). The Application modules of the system operates across all nodule types, including solid, sub-solid and ground glass ranging from 5mm and 30mm in size. The use of the Application leads to a reduction in oversight errors.",
+      "tos_uri": "https://app.ai-inc.com/super-ai-application/tos",
+      "policy_uri": "https://app.ai-inc.com/super-ai-application/policy",
+      "ifu_uri": "https://app.ai-inc.com/super-ai-application/ifu",
+      "dicom_device_uid": "1.2.826.0.1.3680043.10.575.1.111"
+    },
+    "semantic": {
+      "labels": [
+        "classifier",
+        "image",
+        "dicom"
+      ],
+      "data_sources": [
+        {
+          "name": "DICOM_WADO",
+          "type": "dicomweb",
+          "version": "R4",
+          "metadata_only": false,
+          "scope": [
+            "patient/series.read",
+            "patient/study.query"
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "identify_mark_roi",
+          "filters": [
+            {
+              "name": "dicom-bodypart-abdomen",
+              "criteria": [
+                {
+                  "data_source": "DICOM_WADO",
+                  "key": "00081032.00080104",
+                  "text": "eq \"CT1 abdomen\""
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "report",
+              "description": "DICOM SR containing the measurements",
+              "type": "application/dicom.sr",
+              "format": "dcm",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    "technical": {
+      "min_resources": {
+        "cpu": 2,
+        "memory": 1024,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 1024
+      },
+      "max_resources": {
+        "cpu": 4,
+        "memory": 4096,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 8192
+      },
+      "timeout": 300,
+      "pre_started": false,
+      "launch_url": "/invocations",
+      "launch_port": 8000,
+      "env": {
+        "containeR_TYPE": "SERVICE",
+        "SELECTED_FUNCTION": "PRODUCTION",
+        "ACCESS_TOKEN": "PHILIPS_ACCESS_TOKEN",
+        "SECURITY_TOKEN": "PHILIPS_ID_TOKEN",
+        "CORRELATION_ID": "PHILIPS_CORRELATION_ID"
+      },
+      "build": "1.0.0-beta",
+      "docker_image_name": "philips/super-ai-app",
+      "docker_image_tag": "1.0.1"
+    },
+    "extension": {
+      "hostType": "Inference",
+      "adapter": {
+        "required": true,
+        "adapterType": "DicomAdapter",
+        "adapterBaseAddress": "http://aidp-simulatedai:8080",
+        "appInvokeEndpoint": "/AIDPcallsAIApp/invocations",
+        "appExecutionStatusEndpoint": "/status",
+        "appHelthCheckEndpoint": "/AIDPcallsAIApp/ping"
+      },
+      "isInteractiveApp": true,
+      "isHeadlessFlowSupported": false,
+      "interactiveSettings": {
+        "interactiveUrlPattern": "#host/some/url/#PatientId/#StudyId",
+        "ssoProvider": null
+      },
+      "isDeleted": false,
+      "createTime": "2022-09-13T10:38:13.136Z",
+      "modalityType": "CT"
+    }
+  }
+]

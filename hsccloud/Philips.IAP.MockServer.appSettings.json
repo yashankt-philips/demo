@@ -1,0 +1,129 @@
+{
+  "InitialCount": 0,
+  "InProgressMaxCount": 5,
+  "InProgressMaxCountForLongProcessing": 50,
+  "TimeDelayInMs": 1000,
+  "TimeoutInSec": 120,
+  "GetApplications": {
+    "response_file": "aidp_apps"
+  },
+  "GetFilteredApplications": {
+    "AppsList1": {
+      "id": "00080060",
+      "response_file": "aidp_filtered_apps1"
+    },
+    "AppsList2": {
+      "id": "00180015",
+      "response_file": "aidp_filtered_apps2"
+    },
+    "AppsFailure": {
+      "id": "00080020",
+      "response_file": "aidp_filtered_apps_failure"
+    },
+    "AppsTimeout": {
+      "id": "00080030"
+    }
+  },
+  "GetValidatedApplications": {
+    "AppsList1": {
+      "id": "00080060",
+      "response_file": "aidp_validated_apps1"
+    },
+    "AppsList2": {
+      "id": "00180015",
+      "response_file": "aidp_validated_apps2"
+    },
+    "AppsFailure": {
+      "id": "00080020",
+      "response_file": "aidp_validated_apps_failure"
+    },
+    "AppsTimeout": {
+      "id": "00080030"
+    }
+  },
+  "LaunchApplication_OneTimeWorkflow": {
+    "Failure": {
+      "id": "123483806122ef8de3b4105m"
+    },
+    "Timeout": {
+      "id": "123483806122ef8de3b4180m"
+    }
+  },
+  "LaunchApplication_InteractiveContextDetails": {
+    "Failure": {
+      "id": "6116357e26655594c0e7181m"
+    },
+    "Timeout": {
+      "id": "142483806122ef8de3b4180m"
+    }
+  },
+  "GetExecutionStatus": {
+    "Failed": {
+      "id": [ "633483806122ef8de3b4180m", "6116357e26655594c0e7181m", "6356357e26655594c0e7181m" ]
+    },
+    "Unknown": {
+      "id": "523483806122ef8de3b4180m"
+    },
+    "Timeout": {
+      "id": "923483806122ef8de3b4180m"
+    },
+    "LongProcessing": {
+      "id": "523483877722ef8de3b4180m"
+    }
+  },
+  "GetHeadlessResultsUrl": "http://localhost:7284/aidp/gateway/ResultPage/",
+  "DeviceID": "MR_00089_0",
+  "DicomTagList": {
+    "00080060": {
+      "vr": "CS",
+      "Value": [ "CT" ]
+    },
+    "00180015": {
+      "vr": "CS",
+      "Value": [ "KNEE" ]
+    }
+  },
+  "MockResponseFileName": {
+    "AidpUnifiedOnetimeWorkflow": "aidp_unified_onetimeWorkflow",
+    "AidpInteractiveContext": "aidp_interactive_context",
+    "AidpExecutionStatus": "aidp_execution_status",
+    "AidpHealthStatus": "aidp_health_status",
+    "AidpDestinations": "aidp_delivery_destinations",
+    "AidpRegisterDevice": "aidp_register_device",
+    "Aetitle": "aidp_aeTitle"
+  },
+  "MqttServer": {
+    "IpAddress": "localhost",
+    "Port": "1883",
+    "User": "test",
+    "Password": "Password@1234"
+  },
+  "MqttTopicName": "cttitle_63da1c27b5263fc5447fa410",
+  "MessagingDelayInSeconds": 30,
+  "Messaging": {
+    "Interactive_Failure": [ "63205d95406dca4be174801m", "6116357e26655594c0e7181m" ],
+    "Interactive_LongProcess": [ "63205d95406dca4be174802m" ],
+    "Interactive_Halt": [ "63205d95406dca4be174803m" ],
+    "Headless_Failure": [ "123483806122ef8de3b4101m", "6356357e26655594c0e7181m" ],
+    "Headless_LongProcess": [ "123483806122ef8de3b4102m" ],
+    "Headless_Halt": [ "123483806122ef8de3b4103m" ],
+    "Interactive_Success": [ "63205d95406dca4be174895m", "63205d95406dca4be174804m", "63205d95406dca4be174805m" ],
+    "Headless_Success": [ "801db1cf-82bd-44a1-9a6b-084ef712b50e", "123483806122ef8de3b4104m" ]
+  },
+  "DiscardAutoStore": {
+    "id": [
+      "63205d95406dca4be174803m",
+      "63205d95406dca4be174801m",
+      "6116357e26655594c0e7181m",
+      "123483806122ef8de3b4101m",
+      "6356357e26655594c0e7181m",
+      "123483806122ef8de3b4103m",
+      "123483806122ef8de3b4105m",
+      "123483806122ef8de3b4180m",
+      "142483806122ef8de3b4180m",
+      "633483806122ef8de3b4180m",
+      "523483806122ef8de3b4180m",
+      "923483806122ef8de3b4180m"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "dicomNodesList": [
+    {
+      "aeTitle": "DicomNode1",
+      "hostName": "HostName1",
+      "ipAddress": "192.168.1.1",
+      "name": "Node1",
+      "port": 2323
+    },
+    {
+      "aeTitle": "DicomNode2",
+      "hostName": "HostName2",
+      "ipAddress": "192.168.1.2",
+      "name": "Node2",
+      "port": 2324
+    }
+  ],
+  "description": "Dicom Nodes Retrieved",
+  "status": "Success"
+}

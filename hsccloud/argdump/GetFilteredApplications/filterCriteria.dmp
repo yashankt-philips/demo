@@ -1,0 +1,66 @@
+{
+  "Hook": "string",
+  "HookInstance": "string",
+  "Context": {
+    "OrgId": "string",
+    "PatientId": "string",
+    "ImageCount": 0,
+    "Content": "string"
+  }
+}
+
+{
+  "Hook": "string",
+  "HookInstance": "string",
+  "Context": {
+    "OrgId": "string",
+    "PatientId": "string",
+    "ImageCount": 0,
+    "Content": "string"
+  }
+}
+
+{
+  "Hook": "string",
+  "HookInstance": "string",
+  "Context": {
+    "OrgId": "string",
+    "PatientId": "string",
+    "ImageCount": 0,
+    "Content": "string"
+  }
+}
+
+{
+  "Hook": null,
+  "HookInstance": null,
+  "Context": {
+    "OrgId": null,
+    "PatientId": null,
+    "ImageCount": 0,
+    "Content": "[{\"00080060\":{\"vr\":\"CS\", \"Value\":[\"CT\"]}}]"
+  }
+}
+
+{
+  "Hook": null,
+  "HookInstance": null,
+  "Context": {
+    "OrgId": null,
+    "PatientId": null,
+    "ImageCount": 0,
+    "Content": "[{\"00080060\":{\"vr\":\"CS\", \"Value\":[\"CT\"]}}]"
+  }
+}
+
+{
+  "Hook": null,
+  "HookInstance": null,
+  "Context": {
+    "OrgId": null,
+    "PatientId": null,
+    "ImageCount": 0,
+    "Content": "[{\"00080060\":{\"vr\":\"CS\", \"Value\":[\"CT\"]}}]"
+  }
+}
+

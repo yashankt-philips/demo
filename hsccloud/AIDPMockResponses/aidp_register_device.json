@@ -1,0 +1,16 @@
+{
+  "MQTTPort": 31833,
+  "MQTTUser": "test",
+  "MQTTPassword": "Password@1234",
+  "SCPIPAddress": "localhost",
+  "MqttTopicName": "cttitle_asisdh232dsjovio34343",
+
+  "NotificationClientID": "63da1c27b5263fc5447fa410",
+  "DeviceSerialNumber": "isai_test03",
+  "Account": "test_wb06",
+  "Password": "Philips3#",
+  "DestUrl": "http://localhost:7284/checklist/workflow/resultsboard",
+  "SCPPort": 31104,
+  "SCPAETitle": "SKDICOMINT222",
+  "ISAIServiceconfigurationURL": "http://localhost:7284/systemconf"
+}

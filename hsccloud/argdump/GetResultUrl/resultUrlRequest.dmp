@@ -1,0 +1,413 @@
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "213",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "234",
+  "SeriesInstanceId": "234",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "234",
+  "SeriesInstanceId": "234",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "234",
+  "SeriesInstanceId": "234",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "567",
+  "StudyInstanceUid": "567",
+  "SeriesInstanceId": "567",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "1",
+  "StudyInstanceUid": "1",
+  "SeriesInstanceId": "1",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "677",
+  "StudyInstanceUid": "677",
+  "SeriesInstanceId": "677",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "677",
+  "StudyInstanceUid": "677",
+  "SeriesInstanceId": "677",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "123123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "1",
+  "StudyInstanceUid": "11",
+  "SeriesInstanceId": "111",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "1",
+  "StudyInstanceUid": "1",
+  "SeriesInstanceId": "1",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "12356",
+  "SeriesInstanceId": "12356",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "12356",
+  "SeriesInstanceId": "12356",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "213",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "213",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "213",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "213234",
+  "StudyInstanceUid": "123234",
+  "SeriesInstanceId": "123234",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234",
+  "StudyInstanceUid": "123234",
+  "SeriesInstanceId": "123234",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "213234123123",
+  "StudyInstanceUid": "123234123",
+  "SeriesInstanceId": "123234123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "345",
+  "StudyInstanceUid": "345",
+  "SeriesInstanceId": "345",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "123",
+  "StudyInstanceUid": "123",
+  "SeriesInstanceId": "123",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "234",
+  "SeriesInstanceId": "234234",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "234",
+  "SeriesInstanceId": "234",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "234",
+  "SeriesInstanceId": "234",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "234",
+  "SeriesInstanceId": "234",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "234",
+  "SeriesInstanceId": "234",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "patient1",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "12",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "wet",
+  "StudyInstanceUid": "wer",
+  "SeriesInstanceId": "wer",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "wet",
+  "StudyInstanceUid": "wer",
+  "SeriesInstanceId": "wer",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "wet",
+  "StudyInstanceUid": "wer",
+  "SeriesInstanceId": "wer",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "6",
+  "StudyInstanceUid": "6",
+  "SeriesInstanceId": "67",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "6",
+  "StudyInstanceUid": "6",
+  "SeriesInstanceId": "67",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "6",
+  "StudyInstanceUid": "6",
+  "SeriesInstanceId": "67",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "23",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 1
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 0
+}
+
+{
+  "PatientId": "234",
+  "StudyInstanceUid": "1.3.46.670589.33.1.2850666031064781382.27307363043434903132",
+  "SeriesInstanceId": "1.3.46.670589.33.1.242225601500577604.30344227022050283705",
+  "ResultLevel": 0
+}
+

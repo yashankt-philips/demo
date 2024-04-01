@@ -1,0 +1,136 @@
+[
+  {
+    "id": "523483806122ef8de3b4180m",
+    "spec_version": "1.1.0",
+    "commercial": {
+      "name": "Mock_Notification_Polling_Timeout",
+      "description": "Best app in the world",
+      "uri": "https://marketplace.philips.com/applications/super-ai-application",
+      "logo_uri": "https://marketplace.philips.com/applications/super-ai-application/logo/ai-app-1.0.0.png",
+      "marketplace_id": "6059b03294b4000d9f6a35e3",
+      "vendor_id": "ai-inc-dev",
+      "license": {
+        "pattern": "string",
+        "time_interval": "string",
+        "usage_interval": "string"
+      },
+      "private_key": "-----BEGIN PRIVATE KEY-----MIIJRAIBADANBgkqhkiG9w0BAQEFAASCCS4wggkq ... hMnpHOOGnVBZdVNxlZ9utshYrhRTfEnn-----END PRIVATE KEY-----"
+    },
+    "legal": {
+      "vendor_name": "Mock_Notification_Polling_Timeout Inc.",
+      "name": "Mock_Notification_Polling_Timeout",
+      "version": "1.2.0",
+      "udi": "(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234",
+      "serial": "1234567891011121400",
+      "certs": [
+        "cert1",
+        "cert2"
+      ],
+      "regions": [
+        "DE",
+        "AT",
+        "CH"
+      ],
+      "intended_use": "Application is a computer-aided detection (CAD) system intended to identify and mark regions of interest (ROIs). The Application modules of the system operates across all nodule types, including solid, sub-solid and ground glass ranging from 5mm and 30mm in size. The use of the Application leads to a reduction in oversight errors.",
+      "tos_uri": "https://app.ai-inc.com/super-ai-application/tos",
+      "policy_uri": "https://app.ai-inc.com/super-ai-application/policy",
+      "ifu_uri": "https://app.ai-inc.com/super-ai-application/ifu",
+      "dicom_device_uid": "1.2.826.0.1.3680043.10.575.1.111"
+    },
+    "semantic": {
+      "labels": [
+        "classifier",
+        "image",
+        "dicom"
+      ],
+      "data_sources": [
+        {
+          "name": "DICOM_WADO",
+          "type": "dicomweb",
+          "version": "R4",
+          "metadata_only": false,
+          "scope": [
+            "patient/series.read",
+            "patient/study.query"
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "identify_mark_roi",
+          "filters": [
+            {
+              "name": "dicom-bodypart-abdomen",
+              "criteria": [
+                {
+                  "data_source": "DICOM_WADO",
+                  "key": "00081032.00080104",
+                  "text": "eq \"CT1 abdomen\""
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "report",
+              "description": "DICOM SR containing the measurements",
+              "type": "application/dicom.sr",
+              "format": "dcm",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    "technical": {
+      "min_resources": {
+        "cpu": 2,
+        "memory": 1024,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 1024
+      },
+      "max_resources": {
+        "cpu": 4,
+        "memory": 4096,
+        "gpu": 1,
+        "gpu_type": "nvidia",
+        "storage": 8192
+      },
+      "timeout": 300,
+      "pre_started": false,
+      "launch_url": "/invocations",
+      "launch_port": 8000,
+      "env": {
+        "containeR_TYPE": "SERVICE",
+        "SELECTED_FUNCTION": "PRODUCTION",
+        "ACCESS_TOKEN": "PHILIPS_ACCESS_TOKEN",
+        "SECURITY_TOKEN": "PHILIPS_ID_TOKEN",
+        "CORRELATION_ID": "PHILIPS_CORRELATION_ID"
+      },
+      "build": "1.0.0-beta",
+      "docker_image_name": "philips/super-ai-app",
+      "docker_image_tag": "1.0.1"
+    },
+    "extension": {
+      "hostType": "Inference",
+      "adapter": {
+        "required": true,
+        "adapterType": "DicomAdapter",
+        "adapterBaseAddress": "http://aidp-simulatedai:8080",
+        "appInvokeEndpoint": "/AIDPcallsAIApp/invocations",
+        "appExecutionStatusEndpoint": "/status",
+        "appHelthCheckEndpoint": "/AIDPcallsAIApp/ping"
+      },
+      "isInteractiveApp": true,
+      "isHeadlessFlowSupported": false,
+      "interactiveSettings": {
+        "interactiveUrlPattern": "#host/some/url/#PatientId/#StudyId",
+        "ssoProvider": null
+      },
+      "isDeleted": false,
+      "createTime": "2022-09-13T10:38:13.136Z",
+      "modalityType": "CT"
+    }
+  }
+]
