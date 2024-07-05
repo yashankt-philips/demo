@@ -4,7 +4,7 @@ adding some new lines
 
 to test the functionality
 
-of the comments that can be written
+of the comments that can be written (Making changes because of the review)
 
 on the pull request.
 
